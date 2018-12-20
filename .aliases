@@ -1,0 +1,12 @@
+alias th="touch"
+alias cls="clear"
+alias rm="rm -i"
+alias re=". ~/.aliases"
+alias md="mkdir"
+alias nv="nvim"
+alias vi="vim"
+alias eo="exit"
+alias vconfig="vim ~/.vimrc"
+alias zconfig="vim ~/.zshrc"
+alias sudo='sudo -E'
+alias nv="nvim"
