@@ -13,10 +13,12 @@ Plug 'mattn/emmet-vim'
 Plug 'morhetz/gruvbox'
 Plug 'tpope/vim-surround'
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+Plug 'gregsexton/matchtag'
 Plug 'itchyny/calendar.vim'
 Plug 'rstacruz/sparkup'
 Plug 'dikiaap/minimalist'
 Plug 'jvanja/vim-bootstrap4-snippets'
+Plug 'thaerkh/vim-workspace'
 " Code Completion Plugin {{{
 if has('nvim')
 	Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
@@ -66,6 +68,14 @@ let g:deoplete#enable_at_startup = 1
 autocmd FileType html,css EmmetInstall	" 	be used on html & css only
 autocmd FileType vim set foldmethod=marker
 " }}}
+
+" Vim-workspace
+let g:workspace_session_name = 'Session.vim'
+let g:workspace_session_directory = $HOME . '/.vim/sessions/'
+let g:workspace_autosave = 1
+
+
+
 " }}}
 " Vim Configuration {{{
 " Search tweaks {{{
@@ -91,6 +101,17 @@ set number
 set nowrap
 " Theme ???
 colorscheme gruvbox
+" }}}
+" {{{
+set hidden
+set confirm
+" }}}
+" External Source {{{
+source ~/.vim/function/NERDTree.vim
+" }}}
+" autocmd {{{
+autocmd VimEnter * NERDTree
+autocmd VimLeavePre * NERDTreeClose
 " }}}
 " }}}
 " Mapping {{{
