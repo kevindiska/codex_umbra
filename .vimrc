@@ -78,6 +78,9 @@ let g:workspace_autosave = 1
 
 " }}}
 " Vim Configuration {{{
+" Auto close vim if only NERDTree buffer exist{{{ 
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
+" }}}
 " Search tweaks {{{
 set hlsearch
 set ignorecase
@@ -102,16 +105,13 @@ set nowrap
 " Theme ???
 colorscheme gruvbox
 " }}}
-" {{{
+" {{{ Making vim like notepad++
 set hidden
 set confirm
 " }}}
-" External Source {{{
-source ~/.vim/function/NERDTree.vim
-" }}}
 " autocmd {{{
 autocmd VimEnter * NERDTree
-autocmd VimLeavePre * NERDTreeClose
+"autocmd VimLeavePre * NERDTreeClose
 " }}}
 " }}}
 " Mapping {{{

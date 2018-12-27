@@ -10,6 +10,9 @@ export ZSH="/home/kevin/.oh-my-zsh"
 	  . ~/.aliases
   fi
   
+  # Temporary
+export EDITOR=nvim
+export LFS=/mnt/lfs
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
@@ -114,7 +117,7 @@ source $ZSH/oh-my-zsh.sh
 
 POWERLEVEL9K_DISABLE_RPROMPT=false
 POWERLEVEL9K_PROMPT_ON_NEWLINE=true
-#POWERLEVEL9K_MULTILINE_LAST_PROMPT_PREFIX="▶ "
-##POWERLEVEL9K_MULTILINE_FIRST_PROMPT_PREFIX=""
+POWERLEVEL9K_MULTILINE_LAST_PROMPT_PREFIX="▶ "
+POWERLEVEL9K_MULTILINE_FIRST_PROMPT_PREFIX=""
 
 
