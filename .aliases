@@ -11,3 +11,4 @@ alias zconfig="nvim ~/.zshrc"
 alias sudo='sudo -E'
 alias nv="nvim"
 alias e="nvim"
+alias la="ls -lah"
