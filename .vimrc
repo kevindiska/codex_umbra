@@ -13,8 +13,8 @@ Plug 'mattn/emmet-vim'
 Plug 'morhetz/gruvbox'
 Plug 'tpope/vim-surround'
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
-Plug 'gregsexton/matchtag'
 Plug 'itchyny/calendar.vim'
+Plug 'valloric/matchtagalways'
 Plug 'rstacruz/sparkup'
 Plug 'dikiaap/minimalist'
 Plug 'jvanja/vim-bootstrap4-snippets'
@@ -68,12 +68,21 @@ let g:deoplete#enable_at_startup = 1
 autocmd FileType html,css EmmetInstall	" 	be used on html & css only
 autocmd FileType vim set foldmethod=marker
 " }}}
-
-" Vim-workspace
+" Vim-workspace {{{
 let g:workspace_session_name = 'Session.vim'
 let g:workspace_session_directory = $HOME . '/.vim/sessions/'
 let g:workspace_autosave = 1
-
+" }}}
+" MatchTagAlways{{{
+let g:mta_filetypes = {
+    \ 'html' : 1,
+    \ 'xhtml' : 1,
+    \ 'xml' : 1,
+    \ 'jinja' : 1,
+    \ 'php' : 1,
+    \}
+nnoremap <leader>% :MtaJumpToOtherTag<cr>
+" }}}
 
 
 " }}}
