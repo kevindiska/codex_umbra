@@ -1,18 +1,25 @@
+# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
+# Initialization code that may require console input (password prompts, [y/n]
+# confirmations, etc.) must go above this block; everything else may go below.
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
+
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
 #export TERM="xterm-256color"
-export PATH="$PATH:/home/kevin/.gem/ruby/2.5.0/bin"
-export ZSH="/home/kevin/.oh-my-zsh"
+# export PATH="$PATH:/home/kevin/.gem/ruby/2.5.0/bin"
+export ZSH="$HOME/.oh-my-zsh"
 
   if [ -f ~/.aliases ]; then
 	  . ~/.aliases
   fi
   
   # Temporary
-export EDITOR=nvim
-export LFS=/mnt/lfs
+export EDITOR=vim
+# export LFS=/mnt/lfs
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
@@ -20,7 +27,7 @@ export LFS=/mnt/lfs
 #
 #ZSH_THEME="agnoster"
 if [ "$TERM" = "xterm-256color" ]; then
-	ZSH_THEME="powerlevel9k/powerlevel9k"
+	ZSH_THEME="powerlevel10k/powerlevel10k"
 else
 	ZSH_THEME="robbyrussell"
 fi
@@ -120,4 +127,8 @@ POWERLEVEL9K_PROMPT_ON_NEWLINE=true
 POWERLEVEL9K_MULTILINE_LAST_PROMPT_PREFIX="▶ "
 POWERLEVEL9K_MULTILINE_FIRST_PROMPT_PREFIX=""
 
+# Enable automatic changing of directory when a directory name is typed without the 'cd' command
+setopt AUTO_CD
 
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh

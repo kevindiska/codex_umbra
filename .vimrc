@@ -19,14 +19,17 @@ Plug 'rstacruz/sparkup'
 Plug 'dikiaap/minimalist'
 Plug 'jvanja/vim-bootstrap4-snippets'
 Plug 'thaerkh/vim-workspace'
+Plug 'chriskempson/base16-vim'
+Plug 'chriskempson/vim-tomorrow-theme'
+Plug 'joshdick/onedark.vim'
 " Code Completion Plugin {{{
-if has('nvim')
-	Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-else
-	Plug 'Shougo/deoplete.nvim'
-	Plug 'roxma/nvim-yarp'
- 	Plug 'roxma/vim-hug-neovim-rpc'
-endif
+" if has('nvim')
+" 	Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+" else
+" 	Plug 'roxma/nvim-yarp'
+" 	Plug 'Shougo/deoplete.nvim'
+"  	Plug 'roxma/vim-hug-neovim-rpc'
+" endif
 Plug 'Shougo/neosnippet.vim'
 Plug 'Shougo/neosnippet-snippets'
 " }}}
@@ -112,21 +115,23 @@ set cursorline
 set number
 set nowrap
 " Theme ???
-colorscheme gruvbox
+" colorscheme Tomorrow-Night-Eighties
+colorscheme onedark
+
 " }}}
 " {{{ Making vim like notepad++
 set hidden
 set confirm
 " }}}
 " autocmd {{{
-autocmd VimEnter * NERDTree
+" autocmd VimEnter * NERDTree
 "autocmd VimLeavePre * NERDTreeClose
 " }}}
 " }}}
 " Mapping {{{
 inoremap jk <ESC>
 nmap <leader>] :nohlsearch<CR>
-nmap <F12> :Calendar<CR>
+nmap <F7> :Calendar<CR>
 
 " Window shortcut
 noremap <C-h> <C-w>h
