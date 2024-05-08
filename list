@@ -1,0 +1,298 @@
+codex_umbra
+├── pacman_install.txt
+├── .zshrc
+├── .zsh_history
+├── .vimrc
+├── .vim
+│   ├── sessions
+│   ├── plugged
+│   │   ├── vimwiki
+│   │   │   ├── test
+│   │   │   ├── syntax
+│   │   │   ├── plugin
+│   │   │   ├── ftplugin
+│   │   │   ├── doc
+│   │   │   ├── autoload
+│   │   │   ├── README.md
+│   │   │   ├── README-cn.md
+│   │   │   ├── LICENSE.md
+│   │   │   ├── Dockerfile
+│   │   │   ├── CONTRIBUTING.md
+│   │   │   ├── .travis.yml
+│   │   │   ├── .gitignore
+│   │   │   ├── .github
+│   │   │   └── .git
+│   │   ├── vim-workspace
+│   │   │   ├── wiki
+│   │   │   ├── plugin
+│   │   │   ├── doc
+│   │   │   ├── README.md
+│   │   │   ├── LICENSE
+│   │   │   ├── .gitignore
+│   │   │   └── .git
+│   │   ├── vim-surround
+│   │   │   ├── plugin
+│   │   │   ├── doc
+│   │   │   ├── README.markdown
+│   │   │   ├── .gitignore
+│   │   │   ├── .github
+│   │   │   └── .git
+│   │   ├── vim-hug-neovim-rpc
+│   │   │   ├── pythonx
+│   │   │   ├── autoload
+│   │   │   ├── README.md
+│   │   │   ├── LICENSE
+│   │   │   ├── .gitignore
+│   │   │   └── .git
+│   │   ├── vim-fugitive
+│   │   │   ├── syntax
+│   │   │   ├── plugin
+│   │   │   ├── ftplugin
+│   │   │   ├── ftdetect
+│   │   │   ├── doc
+│   │   │   ├── autoload
+│   │   │   ├── README.markdown
+│   │   │   ├── CONTRIBUTING.markdown
+│   │   │   ├── .gitignore
+│   │   │   ├── .github
+│   │   │   ├── .gitattributes
+│   │   │   └── .git
+│   │   ├── vim-bootstrap4-snippets
+│   │   │   ├── snippets
+│   │   │   ├── html
+│   │   │   ├── UltiSnips
+│   │   │   ├── README.md
+│   │   │   └── .git
+│   │   ├── vim-airline-themes
+│   │   │   ├── test
+│   │   │   ├── plugin
+│   │   │   ├── doc
+│   │   │   ├── autoload
+│   │   │   ├── README.md
+│   │   │   ├── LICENSE
+│   │   │   ├── .gitignore
+│   │   │   ├── .github
+│   │   │   └── .git
+│   │   ├── vim-airline
+│   │   │   ├── test
+│   │   │   ├── plugin
+│   │   │   ├── doc
+│   │   │   ├── autoload
+│   │   │   ├── README.md
+│   │   │   ├── LICENSE
+│   │   │   ├── CONTRIBUTING.md
+│   │   │   ├── CHANGELOG.md
+│   │   │   ├── .gitignore
+│   │   │   ├── .github
+│   │   │   └── .git
+│   │   ├── syntastic
+│   │   │   ├── syntax_checkers
+│   │   │   ├── plugin
+│   │   │   ├── doc
+│   │   │   ├── autoload
+│   │   │   ├── _assets
+│   │   │   ├── README.markdown
+│   │   │   ├── LICENCE
+│   │   │   ├── CONTRIBUTING.md
+│   │   │   ├── .gitignore
+│   │   │   └── .git
+│   │   ├── sparkup
+│   │   │   ├── vim
+│   │   │   ├── sparkup.py
+│   │   │   ├── sparkup-unittest.py
+│   │   │   ├── mit-license.txt
+│   │   │   ├── ftplugin -> vim/ftplugin
+│   │   │   ├── ftdetect
+│   │   │   ├── TextMate
+│   │   │   ├── README.md
+│   │   │   ├── Makefile
+│   │   │   ├── .gitignore
+│   │   │   └── .git
+│   │   ├── rainbow
+│   │   │   ├── tests
+│   │   │   ├── plugin
+│   │   │   ├── doc
+│   │   │   ├── autoload
+│   │   │   ├── README_zh.md
+│   │   │   ├── README.md
+│   │   │   ├── NOTICE
+│   │   │   ├── LICENSE
+│   │   │   ├── .gitignore
+│   │   │   ├── .github
+│   │   │   └── .git
+│   │   ├── nvim-yarp
+│   │   │   ├── requirements.txt
+│   │   │   ├── pythonx
+│   │   │   ├── autoload
+│   │   │   ├── README.md
+│   │   │   ├── LICENSE
+│   │   │   ├── .gitignore
+│   │   │   └── .git
+│   │   ├── nerdtree
+│   │   │   ├── syntax
+│   │   │   ├── screenshot.png
+│   │   │   ├── plugin
+│   │   │   ├── nerdtree_plugin
+│   │   │   ├── lib
+│   │   │   ├── doc
+│   │   │   ├── autoload
+│   │   │   ├── _config.yml
+│   │   │   ├── README.markdown
+│   │   │   ├── LICENCE
+│   │   │   ├── CHANGELOG.md
+│   │   │   ├── .vintrc.yaml
+│   │   │   ├── .gitignore
+│   │   │   ├── .github
+│   │   │   └── .git
+│   │   ├── neosnippet.vim
+│   │   │   ├── test
+│   │   │   ├── syntax
+│   │   │   ├── rplugin
+│   │   │   ├── plugin
+│   │   │   ├── indent
+│   │   │   ├── ftplugin
+│   │   │   ├── ftdetect
+│   │   │   ├── doc
+│   │   │   ├── denops
+│   │   │   ├── autoload
+│   │   │   ├── README.md
+│   │   │   ├── Makefile
+│   │   │   ├── LICENSE
+│   │   │   ├── .travis.yml
+│   │   │   ├── .gitignore
+│   │   │   ├── .github
+│   │   │   └── .git
+│   │   ├── neosnippet-snippets
+│   │   │   ├── neosnippets
+│   │   │   ├── README.mkd
+│   │   │   ├── LICENSE
+│   │   │   └── .git
+│   │   ├── minimalist
+│   │   │   ├── colors
+│   │   │   ├── autoload
+│   │   │   ├── README.md
+│   │   │   ├── LICENSE
+│   │   │   └── .git
+│   │   ├── matchtagalways
+│   │   │   ├── test.html
+│   │   │   ├── python
+│   │   │   ├── plugin
+│   │   │   ├── doc
+│   │   │   ├── autoload
+│   │   │   ├── README.md
+│   │   │   ├── COPYING.txt
+│   │   │   ├── .travis.yml
+│   │   │   ├── .gitignore
+│   │   │   └── .git
+│   │   ├── gruvbox
+│   │   │   ├── package.json
+│   │   │   ├── gruvbox_256palette_osx.sh
+│   │   │   ├── gruvbox_256palette.sh
+│   │   │   ├── colors
+│   │   │   ├── autoload
+│   │   │   ├── README.md
+│   │   │   ├── CHANGELOG.md
+│   │   │   └── .git
+│   │   ├── emmet-vim
+│   │   │   ├── unittest.vim
+│   │   │   ├── plugin
+│   │   │   ├── emmet.vim.vimup
+│   │   │   ├── docs
+│   │   │   ├── doc
+│   │   │   ├── autoload
+│   │   │   ├── TUTORIAL.mkd
+│   │   │   ├── TUTORIAL
+│   │   │   ├── TODO
+│   │   │   ├── README.mkd
+│   │   │   ├── Makefile
+│   │   │   ├── LICENSE
+│   │   │   ├── .travis.yml
+│   │   │   ├── .gitmodules
+│   │   │   ├── .gitignore
+│   │   │   ├── .github
+│   │   │   └── .git
+│   │   ├── deoplete.nvim
+│   │   │   ├── test
+│   │   │   ├── rplugin
+│   │   │   ├── plugin
+│   │   │   ├── doc
+│   │   │   ├── autoload
+│   │   │   ├── README.md
+│   │   │   ├── Makefile
+│   │   │   ├── LICENSE
+│   │   │   ├── .gitignore
+│   │   │   ├── .github
+│   │   │   └── .git
+│   │   └── calendar.vim
+│   │       ├── test
+│   │       ├── syntax
+│   │       ├── plugin
+│   │       ├── doc
+│   │       ├── autoload
+│   │       ├── README.md
+│   │       ├── LICENSE
+│   │       ├── .gitignore
+│   │       ├── .github
+│   │       └── .git
+│   ├── function
+│   │   ├── calendartoggle.vim
+│   │   ├── NERDtoggle.vim
+│   │   └── NERDTree.vim
+│   ├── colors
+│   │   ├── Tomorrow.vim
+│   │   ├── Tomorrow-Night.vim
+│   │   ├── Tomorrow-Night-Eighties.vim
+│   │   ├── Tomorrow-Night-Bright.vim
+│   │   └── Tomorrow-Night-Blue.vim
+│   ├── autoload
+│   │   └── plug.vim
+│   └── .netrwhist
+├── .tmux.conf.local
+├── .tmux.conf
+├── .gitignore
+├── .git
+│   ├── refs
+│   │   ├── tags
+│   │   ├── remotes
+│   │   │   └── origin
+│   │   └── heads
+│   │       └── master
+│   ├── packed-refs
+│   ├── objects
+│   │   ├── pack
+│   │   │   ├── pack-ee1a7c859b02d5e252c9879747540cc4078b1781.rev
+│   │   │   ├── pack-ee1a7c859b02d5e252c9879747540cc4078b1781.pack
+│   │   │   └── pack-ee1a7c859b02d5e252c9879747540cc4078b1781.idx
+│   │   └── info
+│   ├── logs
+│   │   ├── refs
+│   │   │   ├── remotes
+│   │   │   └── heads
+│   │   └── HEAD
+│   ├── info
+│   │   └── exclude
+│   ├── index
+│   ├── hooks
+│   │   ├── update.sample
+│   │   ├── sendemail-validate.sample
+│   │   ├── push-to-checkout.sample
+│   │   ├── prepare-commit-msg.sample
+│   │   ├── pre-receive.sample
+│   │   ├── pre-rebase.sample
+│   │   ├── pre-push.sample
+│   │   ├── pre-merge-commit.sample
+│   │   ├── pre-commit.sample
+│   │   ├── pre-applypatch.sample
+│   │   ├── post-update.sample
+│   │   ├── fsmonitor-watchman.sample
+│   │   ├── commit-msg.sample
+│   │   └── applypatch-msg.sample
+│   ├── description
+│   ├── config
+│   └── HEAD
+├── .directory
+├── .bashrc
+├── .bash_history
+└── .aliases
+
+159 directories, 137 files

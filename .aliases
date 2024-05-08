@@ -10,5 +10,15 @@ alias vconf="editor ~/.vimrc"
 alias zconf="editor ~/.zshrc"
 alias sudo='sudo -E'
 alias e="editor"
-alias la="ls -lah"
 alias root="sudo -E $SHELL"
+alias ls='eza --icons=auto'
+alias ls='ls -alF --color=always --sort=size  | grep -v /'
+alias la='ls -a'
+alias ld='ls -lD'
+alias lf='ls -lF --color=always | grep -v /'
+alias lh='ls -dl .* --group-directories-first'
+alias ll='ls -al --group-directories-first'
+alias lt='ls -al --sort=modified'
+
+
+
